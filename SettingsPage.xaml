@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:umpireCounter="clr-namespace:UmpireCounterMAUI;assembly=UmpireCounterMAUI"
+             x:Class="UmpireCounterMAUI.SettingsPage"
+             Title="Settings">
+    <ContentPage.Content>
+        <Grid   VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5"/>
+            </Grid.ColumnDefinitions>
+
+            
+            <Label Text="Balls in an over"
+                   FontSize="Medium"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"/>
+
+            <Label Text="Vibrate on button click"
+                   FontSize="Medium"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"/>
+
+            <Label Text="Innings Timer"
+                   FontSize="Medium"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Grid.Row="3"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"/>
+
+            <Entry x:Name="EntryBallsInOver" 
+                   ClearButtonVisibility="WhileEditing"
+                   TextColor="Gray"
+                   Keyboard="Numeric"
+                   Grid.Row="1"
+                   Grid.Column="3"
+                   HeightRequest="50"
+                   VerticalOptions="Center"/>
+
+            <Switch x:Name="VibrateSwitch"
+                    ThumbColor="Gray"
+                    OnColor="{StaticResource Primary}"
+                    HorizontalOptions="Center" 
+                    Grid.Row="2" 
+                    Grid.Column="3"/>
+
+            <Switch x:Name="TimerSwitch"
+                    ThumbColor="Gray"
+                    OnColor="{StaticResource Primary}"
+                    HorizontalOptions="Center" 
+                    Grid.Row="3" 
+                    Grid.Column="3"/>
+
+            <Label Text="Display Runs Counter"
+                   FontSize="Medium"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Grid.Row="4"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"/>
+
+            <Switch  x:Name="DisplayRunsSwitch"
+                    ThumbColor="Gray"
+                    OnColor="{StaticResource Primary}"
+                    HorizontalOptions="Center" 
+                    Grid.Row="4" 
+                    Grid.Column="3" />
+
+            <Label Text="Display Wickets Counter"
+                   FontSize="Medium"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Grid.Row="5"
+                   Grid.Column="1" 
+                   Grid.ColumnSpan="2"/>
+
+            <Switch  x:Name="DisplayWicketsSwitch"
+                    ThumbColor="Gray"
+                    OnColor="{StaticResource Primary}"
+                    HorizontalOptions="Center" 
+                    Grid.Row="5" 
+                    Grid.Column="3" />
+
+            <Button Text="Update"
+                    TextColor="{StaticResource Secondary}"
+                    Clicked="UpdateSettingsClicked"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="3"/>
+        </Grid>
+    </ContentPage.Content>
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding BackCommand}" />
+    </Shell.BackButtonBehavior>
+    
+</ContentPage>
