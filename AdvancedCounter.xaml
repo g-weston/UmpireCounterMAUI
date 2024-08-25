@@ -26,8 +26,8 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Label Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" x:Name="ScoreHeaderLabel" Text="{Binding ScoreHeader}" FontSize="Header" TextColor="DodgerBlue" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-        <Label Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" x:Name="OversHeaderLabel" Text="{Binding OversHeader }" FontSize="Header" TextColor="DodgerBlue" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <Label Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" x:Name="ScoreHeaderLabel" Text="{Binding ScoreHeader}" FontSize="75" CharacterSpacing="2" TextColor="DodgerBlue" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <Label Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" x:Name="OversHeaderLabel" Text="{Binding OversHeader }" FontSize="60" TextColor="DodgerBlue" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
         <Label Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" x:Name="TimeHeaderLabel" Text="{Binding TimeHeader}" FontSize="Small" TextColor="DodgerBlue" HorizontalTextAlignment="End" VerticalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="true" />
         <Label Grid.Column="1" Grid.Row="2" Text="Runs" x:Name="RunsLabel" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Large" TextColor="DodgerBlue" />
         <Button Grid.Column="0" Grid.Row="2" Text="-" x:Name="RunsDecreaseButton" FontSize="Large" Clicked="DecreaseTotalClicked" CornerRadius="25" BorderColor="{StaticResource Secondary}" BorderWidth="5"/>

@@ -119,8 +119,9 @@
                          HorizontalOptions="Fill"
                          HeightRequest="200"
                          Grid.Row="0" />
-                <Image Source="UmpireCounterLogoMedium" 
+                <Image Source="UmpireCounterLogoMedium"
                        Grid.Row="0" />
+                <!-- TODO need to make this available generally rather than just a singular platform going forward-->
                 <BoxView Color="{StaticResource Secondary}"
                          HeightRequest="5"
                          Grid.Row="1" />
@@ -153,7 +154,7 @@
                 <Button TextColor="{StaticResource Secondary}"
                         Text="About"
                         Clicked="AboutButtonClicked"/>
-                <Label Text="Version 0.8"
+                <Label Text="Version 0.9"
                        TextColor="{StaticResource Secondary}"
                        HorizontalTextAlignment="Center"/>
                 <BoxView Color="{StaticResource Primary}"
