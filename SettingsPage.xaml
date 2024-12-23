@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:umpireCounter="clr-namespace:UmpireCounterMAUI;assembly=UmpireCounterMAUI"
              x:Class="UmpireCounterMAUI.SettingsPage"
-             Title="Settings">
+             Title="Settings"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
     <ContentPage.Content>
         <Grid   VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
@@ -30,6 +31,7 @@
                    HorizontalTextAlignment="Center"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="CenterAndExpand"
+                   TextColor="{AppThemeBinding Light=#404040, Dark={StaticResource Secondary}}"
                    Grid.Row="1"
                    Grid.Column="1"
                    Grid.ColumnSpan="2"/>
@@ -39,6 +41,7 @@
                    HorizontalTextAlignment="Center"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="CenterAndExpand"
+                   TextColor="{AppThemeBinding Light=#404040, Dark={StaticResource Secondary}}"
                    Grid.Row="2"
                    Grid.Column="1"
                    Grid.ColumnSpan="2"/>
@@ -48,13 +51,16 @@
                    HorizontalTextAlignment="Center"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="CenterAndExpand"
+                   TextColor="{AppThemeBinding Light=#404040, Dark={StaticResource Secondary}}"
                    Grid.Row="3"
                    Grid.Column="1"
                    Grid.ColumnSpan="2"/>
 
             <Entry x:Name="EntryBallsInOver" 
                    ClearButtonVisibility="WhileEditing"
-                   TextColor="Gray"
+                   TextColor="{AppThemeBinding Light=#404040, Dark={StaticResource Secondary}}"
+                   PlaceholderColor="{AppThemeBinding Light=#404040, Dark={StaticResource Secondary}}"
+                   BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
                    Keyboard="Numeric"
                    Grid.Row="1"
                    Grid.Column="3"
@@ -62,14 +68,14 @@
                    VerticalOptions="Center"/>
 
             <Switch x:Name="VibrateSwitch"
-                    ThumbColor="Gray"
+                    ThumbColor="{AppThemeBinding Light=Gray, Dark=White}"
                     OnColor="{StaticResource Primary}"
                     HorizontalOptions="Center" 
                     Grid.Row="2" 
                     Grid.Column="3"/>
 
             <Switch x:Name="TimerSwitch"
-                    ThumbColor="Gray"
+                    ThumbColor="{AppThemeBinding Light=Gray, Dark=White}"
                     OnColor="{StaticResource Primary}"
                     HorizontalOptions="Center" 
                     Grid.Row="3" 
@@ -80,12 +86,13 @@
                    HorizontalTextAlignment="Center"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="CenterAndExpand"
+                   TextColor="{AppThemeBinding Light=#404040, Dark={StaticResource Secondary}}"
                    Grid.Row="4"
                    Grid.Column="1"
                    Grid.ColumnSpan="2"/>
 
             <Switch  x:Name="DisplayRunsSwitch"
-                    ThumbColor="Gray"
+                    ThumbColor="{AppThemeBinding Light=Gray, Dark=White}"
                     OnColor="{StaticResource Primary}"
                     HorizontalOptions="Center" 
                     Grid.Row="4" 
@@ -96,12 +103,13 @@
                    HorizontalTextAlignment="Center"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="CenterAndExpand"
+                   TextColor="{AppThemeBinding Light=#404040, Dark={StaticResource Secondary}}"
                    Grid.Row="5"
                    Grid.Column="1" 
                    Grid.ColumnSpan="2"/>
 
             <Switch  x:Name="DisplayWicketsSwitch"
-                    ThumbColor="Gray"
+                    ThumbColor="{AppThemeBinding Light=Gray, Dark=White}"
                     OnColor="{StaticResource Primary}"
                     HorizontalOptions="Center" 
                     Grid.Row="5" 
@@ -109,6 +117,7 @@
 
             <Button Text="Update"
                     TextColor="{StaticResource Secondary}"
+                    FontSize="Medium"
                     Clicked="UpdateSettingsClicked"
                     VerticalOptions="StartAndExpand"
                     HorizontalOptions="CenterAndExpand"

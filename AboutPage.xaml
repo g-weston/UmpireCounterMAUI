@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UmpireCounterMAUI.AboutPage"
-             Title="About">
+             Title="About"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
     <ContentPage.Content>
         
             <Grid>
@@ -21,20 +22,22 @@
                 <Label Text="Cricket Umpire Counter"
                        VerticalOptions="CenterAndExpand" 
                        HorizontalOptions="CenterAndExpand"
-                       FontSize="Large"
-                       TextColor="{StaticResource Primary}"
+                       FontSize="Title"
+                       TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Secondary}}"
                        Grid.Row="0"
                        Grid.Column="1"/>
                 <Label Text="Cricket umpire counting app for use in real matches to aid umpires. Customisable level of counting available to give you the choice of what you want to track!"
                        VerticalOptions="CenterAndExpand"
                        HorizontalOptions="CenterAndExpand"
+                       TextColor="{AppThemeBinding Light=Gray, Dark={StaticResource Secondary}}"
                        FontSize="Medium"
                        HorizontalTextAlignment="Center"
                        Grid.Row="1" 
                        Grid.Column="1"/>
-                <Label Text="Version 0.10"
+                <Label Text="Version 0.11"
                        VerticalOptions="CenterAndExpand"
                        HorizontalOptions="CenterAndExpand"
+                       TextColor="{AppThemeBinding Light=Gray, Dark={StaticResource Secondary}}"
                        FontSize="Small"
                        Grid.Row="2"
                        Grid.Column="1"/>
