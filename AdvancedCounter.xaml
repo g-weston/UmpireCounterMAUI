@@ -82,7 +82,8 @@
                 Clicked="DecreaseTotalClicked"
                 CornerRadius="25"
                 BorderColor="{AppThemeBinding Light=White, Dark=Black}"
-                BorderWidth="5" />
+                BorderWidth="5"
+                SemanticProperties.Description="Decrease runs"/>
         
         <Button Grid.Column="2"
                 Grid.Row="2"
@@ -92,7 +93,8 @@
                 Clicked="IncreaseTotalClicked"
                 CornerRadius="25"
                 BorderColor="{AppThemeBinding Light=White, Dark=Black}"
-                BorderWidth="5" />
+                BorderWidth="5"
+                SemanticProperties.Description="Increase runs"/>
         
         <Label Grid.Column="1"
                Grid.Row="3"
@@ -111,7 +113,8 @@
                 Clicked="DecreaseWicketsClicked"
                 CornerRadius="25"
                 BorderColor="{AppThemeBinding Light=White, Dark=Black}"
-                BorderWidth="5" />
+                BorderWidth="5"
+                SemanticProperties.Description="Decrease wickets"/>
         
         <Button Grid.Column="2"
                 Grid.Row="3"
@@ -121,7 +124,8 @@
                 Clicked="IncreaseWicketsClicked"
                 CornerRadius="25"
                 BorderColor="{AppThemeBinding Light=White, Dark=Black}"
-                BorderWidth="5" />
+                BorderWidth="5"
+                SemanticProperties.Description="Increase wickets"/>
         
         <Label Grid.Column="1"
                Grid.Row="4"
@@ -138,7 +142,8 @@
                 Clicked="DecreaseOversClicked"
                 CornerRadius="25"
                 BorderColor="{AppThemeBinding Light=White, Dark=Black}"
-                BorderWidth="5"/>
+                BorderWidth="5"
+                SemanticProperties.Description="Decrease balls bowled"/>
         
         <Button Grid.Column="2"
                 Grid.Row="4"
@@ -147,6 +152,7 @@
                 Clicked="IncreaseOversClicked"
                 CornerRadius="25"
                 BorderColor="{AppThemeBinding Light=White, Dark=Black}"
-                BorderWidth="5"/>
+                BorderWidth="5"
+                SemanticProperties.Description="Increase balls bowled"/>
     </Grid>
 </ContentPage>

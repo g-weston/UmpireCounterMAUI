@@ -72,14 +72,16 @@
                     OnColor="{StaticResource Primary}"
                     HorizontalOptions="Center" 
                     Grid.Row="2" 
-                    Grid.Column="3"/>
+                    Grid.Column="3"
+                    SemanticProperties.Description="Toggle vibration setting"/>
 
             <Switch x:Name="TimerSwitch"
                     ThumbColor="{AppThemeBinding Light=Gray, Dark=White}"
                     OnColor="{StaticResource Primary}"
                     HorizontalOptions="Center" 
                     Grid.Row="3" 
-                    Grid.Column="3"/>
+                    Grid.Column="3"
+                    SemanticProperties.Description="Toggle timer setting"/>
 
             <Label Text="Display Runs Counter"
                    FontSize="Medium"
@@ -96,7 +98,8 @@
                     OnColor="{StaticResource Primary}"
                     HorizontalOptions="Center" 
                     Grid.Row="4" 
-                    Grid.Column="3" />
+                    Grid.Column="3"
+                    SemanticProperties.Description="Toggle display runs setting"/>
 
             <Label Text="Display Wickets Counter"
                    FontSize="Medium"
@@ -113,7 +116,8 @@
                     OnColor="{StaticResource Primary}"
                     HorizontalOptions="Center" 
                     Grid.Row="5" 
-                    Grid.Column="3" />
+                    Grid.Column="3"
+                    SemanticProperties.Description="Toggle display wickets setting"/>
 
             <Button Text="Update"
                     TextColor="{StaticResource Secondary}"
